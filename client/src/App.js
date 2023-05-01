@@ -24,7 +24,7 @@ const App = () => {
         <h1>Properties for sale</h1>
         {properties.map((property) => {
           return (
-            <li>
+            <li key={property.id}>
               <img src={property.img} alt={property.address} />
               <h2>{property.title}</h2>
               <p>{property.address}</p>
